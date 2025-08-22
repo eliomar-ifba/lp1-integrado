@@ -1,4 +1,4 @@
-package prova;
+package aaprova;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ public class CadastroApp {
     public static void main(String[] args) {
 
         Transacao tran1 = new Transacao(001, "Saque", 8000000.00, LocalDateTime.now(),
-                "Erro Dinheiro na conta Insuficiente");
+                "Errooo Dinheiro na conta Insuficiente");
         Transacao tran2 = new Transacao(002, "Saque", 9999999.00, LocalDateTime.now(),
                 "Erro Dinheiro na conta Insuficiente");
         Transacao tran3 = new Transacao(003, "Depósito", 2.50, LocalDateTime.now(), "Depósito Concluído");
