@@ -41,6 +41,17 @@ public class Teste {
     public static void venderObra(Obra obra){
         System.out.println("ID: " + obra.getId());
         System.out.println("Título: " + obra.getTitulo());
+        System.out.println("Valor Inicial: " + obra.getValor());
+        
+        System.out.println("Aplicando desconto...");
+        boolean resultado = obra.aplicarDesconto(0.3);
+        if(resultado){
+            System.out.println("Desconto aplicado!");
+        }else{
+            System.out.println("Não foi possível aplicar desconto!");
+        }
+        System.out.println("Valor Atualizado: " + obra.getValor());
+
 
         if(obra instanceof Livro){
             System.out.println("Vendendo Livro....");

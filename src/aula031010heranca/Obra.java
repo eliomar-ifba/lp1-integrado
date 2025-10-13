@@ -43,9 +43,7 @@ public abstract class Obra {
         this.valor = valor;
     }
 
-    
-    
-
+    public abstract boolean aplicarDesconto(double porcentagem);
 
 
 }

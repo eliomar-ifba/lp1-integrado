@@ -20,5 +20,16 @@ public class Livro extends Obra{
         this.tiragem = tiragem;
     }
 
+    @Override
+    public boolean aplicarDesconto(double porcentagem) 
+    {
+        if(porcentagem > 0.5){
+            return false; //sai da função e não continua
+        }
+        double desconto = super.getValor() * porcentagem;
+        super.setValor(super.getValor() - desconto);
+        return true;
+    }
+
     
 }

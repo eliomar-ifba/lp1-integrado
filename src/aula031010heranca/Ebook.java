@@ -21,6 +21,16 @@ public class Ebook extends Obra{
         this.urlMarcaDagua = urlMarcaDagua;
     }
 
+    @Override
+    public boolean aplicarDesconto(double porcentagem) 
+    {
+        if(porcentagem > 0.7){
+            return false; //sai da função e não continua
+        }
+        double desconto = super.getValor() * porcentagem;
+        super.setValor(super.getValor() - desconto);
+        return true;
+    }
     
 
 
